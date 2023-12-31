@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LetsGen Smart Device</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        
+        <div class="logo">
+            <a href="#">
+              <img src="E:\LetsGen product\img\Picsart_23-12-30_11-01-40-225.png" alt="LetsGen Logo">
+              
+            </a>
+          </div>
+        <ul>
+        
+            <li><a href="E:\LetsGen product\demo.html">Demo</a></li>
+            <li><a href="E:\LetsGen product\details.html">Details</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <i class="fas fa-shopping-cart"></i>
+        </ul>
+    </nav>
+          
+
+    <div class="flex-box">
+        <div class="left">
+            <div class="big-img">
+                <img src="E:\LetsGen product\img\IMG-20231230-WA0001.jpg">
+            </div>
+            <div class="images">
+                <div class="small-img">
+                    <img src="E:\LetsGen product\img\Picsart_23-12-30_14-12-08-545.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="E:\LetsGen product\img\IMG-20231230-WA0002.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="C:\Users\Admin\Downloads\smart.jpg" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="C:\Users\Admin\Downloads\chart.jpg" onclick="showImg(this.src)">
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="right">
+            <div class="url"></div>
+            <div class="pname">Smart Home Controller </div>
+            <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">RS.1500</div>
+            
+            <div class="quantity">
+                <p>Quantity :</p>
+                <input type="number" min="1" max="5" value="1">
+            </div>
+            <div class="btn-box">
+                <button class="cart-btn">Add to Cart</button>
+                <a href="E:\LetsGen product\img\buy.html" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let bigImg = document.querySelector('.big-img img');
+        function showImg(pic){
+            bigImg.src = pic;
+        }
+    </script>
+</body>
+</html>

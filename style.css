@@ -1,0 +1,265 @@
+To make your webpage responsive and suitable for mobile devices, you can use media queries in your CSS. Media queries allow you to apply different styles based on the screen size. Here's an example of how you might modify your existing CSS to make it more mobile-friendly:
+
+```css
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('C:\Users\Admin\Downloads\pnghome.jpg'); /* Replace with the actual path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    /* Styles for your website content go here */
+}
+
+
+
+
+.content {
+    /* Styles for your website content go here */
+}
+
+.top-header {
+    background-color: rgb(32, 168, 150);
+    color: lightblue;
+    padding: 1em;
+}
+
+nav {
+    display: flex;
+    flex-direction: column; /* Mobile: Stack items vertically */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Mobile: Add margin between items */
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 200px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column; /* Mobile: Stack items vertically */
+    text-align: center; /* Mobile: Center text */
+}
+
+nav ul li {
+    margin: 10px 0; /* Mobile: Add margin between items */
+}
+
+nav ul li a {
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    width: 0;
+    height: 2.5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+}
+
+nav ul i {
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Additional styles for the product page */
+
+.flex-box {
+    display: flex;
+    flex-direction: column; /* Mobile: Stack items vertically */
+    margin: 20px auto;
+    text-align: center; /* Mobile: Center text */
+}
+
+.left {
+    width: 100%; /* Mobile: Full width */
+}
+
+.big-img {
+    width: 100%; /* Mobile: Full width */
+}
+
+.big-img img {
+    width: 100%;
+}
+
+.images {
+    display: flex;
+    flex-direction: column; /* Mobile: Stack items vertically */
+    margin-top: 15px;
+}
+
+.small-img {
+    width: 50px;
+    overflow: hidden;
+    border: 1.5px solid black;
+    margin-bottom: 10px; /* Mobile: Add margin between items */
+}
+
+.small-img img {
+    width: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.small-img:hover img {
+    transform: scale(1.2);
+}
+
+.url {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(0, 102, 255);
+}
+
+.pname {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+.ratings i {
+    color: rgb(255, 136, 0);
+}
+
+.price {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.size {
+    display: flex;
+    flex-direction: column; /* Mobile: Stack items vertically */
+    align-items: center; /* Mobile: Center text */
+    margin: 20px 0;
+}
+
+.size p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px; /* Mobile: Add margin between items */
+}
+
+.psize {
+    width: 60px;
+    height: 30px;
+    border: 1px solid #ff5e00;
+    color: #000;
+    text-align: center;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.psize.active {
+    border-width: 1.5px;
+    color: #ff5e00;
+    font-weight: 500;
+}
+
+.quantity {
+    display: flex;
+    flex-direction: column; /* Mobile: Stack items vertically */
+    align-items: center; /* Mobile: Center text */
+}
+
+.quantity p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px; /* Mobile: Add margin between items */
+}
+
+.quantity input {
+    width: 80%; /* Mobile: 80% width of the container */
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 10px; /* Mobile: Add margin between items */
+}
+
+.btn-box {
+    display: flex;
+    flex-direction: column; /* Mobile: Stack items vertically */
+    align-items: center; /* Mobile: Center text */
+    margin-top: 50px;
+}
+
+.btn-box button {
+    font-size: 18px;
+    padding: 8px 25px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color:lightseagreen;
+    margin: 20px;
+}
+.buy-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff0000; /* Red color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}
+
+/* Add media query for screens smaller than 600px */
+@media (max-width: 600px) {
+    .buy-btn {
+        display: block;
+        width: 100%; /* Make the button full width on smaller screens */
+        margin-top: 10px; /* Add margin between elements on smaller screens */
+    }
+}
+s

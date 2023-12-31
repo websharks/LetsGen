@@ -1,0 +1,10 @@
+video {
+    max-width: 540px;
+  }
+  /* Add the following CSS styles to your stylesheet */
+
+p {
+    font-size: 25px; /* Adjust the font size as needed */
+    line-height: 1.5; /* Adjust the line height for spacing between lines */
+    margin-bottom: 20px; /* Add margin at the bottom for spacing between paragraphs */
+}
